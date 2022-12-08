@@ -23,7 +23,10 @@ new List<Func<object>>
         Day06.Solve2,
         
         Day07.Solve1,
-        Day07.Solve2
+        Day07.Solve2,
+        
+        Day08.Solve1,
+        Day08.Solve2
     }
     .ForEach(solver =>
     {

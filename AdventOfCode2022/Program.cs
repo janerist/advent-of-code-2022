@@ -29,12 +29,15 @@ new List<Func<object>>
         Day08.Solve2,
         
         Day09.Solve1,
-        Day09.Solve2
+        Day09.Solve2,
+        
+        Day10.Solve1,
+        Day10.Solve2
     }
     .ForEach(solver =>
     {
         var sw = Stopwatch.StartNew();
         var solution = solver();
         Console.WriteLine(
-            $"{solver.Method.DeclaringType.Name}.{solver.Method.Name} [{sw.Elapsed.TotalMilliseconds.ToString(CultureInfo.InvariantCulture)} ms]: {solution}");
+            $"{solver.Method.DeclaringType.Name}.{solver.Method.Name} [{sw.Elapsed.TotalMilliseconds.ToString(CultureInfo.InvariantCulture)} ms]:\n{solution}\n");
     });
